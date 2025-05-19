@@ -68,7 +68,7 @@
             color: #212121;
         }
 
-        header {
+/*         header {
             position: fixed;
             top: 0;
             left: 0;
@@ -116,6 +116,41 @@
         .nav-links a:hover {
             color: #FF5722;
         }
+ */
+
+        header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  padding: 20px 0;
+  background-color: transparent;
+}
+
+header.scrolled {
+  background-color: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #FF5722;
+  text-decoration: none;
+}
+
+.nav-links .nav-link {
+  color: #212121;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-links .nav-link:hover {
+  color: #FF5722;
+}
 
         .hero {
             padding-top: 180px;
@@ -542,7 +577,7 @@
     </style>
 </head>
 <body>
-    <header id="header">
+<!--     <header id="header">
         <div class="container">
             <nav class="navbar">
                 <a href="#" class="logo">Food Fiesta 🍽️</a>
@@ -556,7 +591,48 @@
                 <a href="#" class="btn btn-primary">Order Now</a>
             </nav>
         </div>
-    </header>
+    </header> -->
+
+    <header id="header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand logo" href="#">Food Fiesta 🍽️</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto nav-links">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-primary ms-lg-3 mt-3 mt-lg-0">Order Now</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
 
     <section class="hero">
         <div class="container">
